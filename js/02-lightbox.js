@@ -25,23 +25,23 @@ galleryItems.forEach(createGalleryItems);
 const lightbox = new SimpleLightbox('.gallery a', {captionDelay: 250, captionsData:"alt"})
 
  
-gallery.addEventListener("click", onGalleryClick);
+// gallery.addEventListener("click", onGalleryClick);
 
-function onGalleryClick(e) {
-    e.preventDefault();
+// function onGalleryClick(e) {
+//     e.preventDefault();
 
-    galleryItems.forEach(addSimpleLightBoxElements)
-}
+//     galleryItems.forEach(addSimpleLightBoxElements)
+// }
 
 
-function addSimpleLightBoxElements({preview, original, description}) {
-  const  simpleLightBoxMarkup = `<div class="gallery">
-  <a href="${original}"><img src="${preview}" alt="${description}" title="Beautiful Image"/></a>
-  <a href="${original}"><img src="${preview}" alt="${description}" title="Beautiful Image"/></a>
-</div>`
+// function addSimpleLightBoxElements({preview, original, description}) {
+//   const  simpleLightBoxMarkup = `<div class="gallery">
+//   <a href="${original}"><img src="${preview}" alt="${description}" title="Beautiful Image"/></a>
+//   <a href="${original}"><img src="${preview}" alt="${description}" title="Beautiful Image"/></a>
+// </div>`
     
    
-}
+// }
 
 
 
